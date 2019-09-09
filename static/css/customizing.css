@@ -1,4 +1,5 @@
 #city option,
-#shape option {
+#shape option,
+.capitalize {
     text-transform: capitalize!important;   
 }
