@@ -94,17 +94,19 @@ body {
 }
 
 .hero h1 {
-  margin-top: 7rem;
+  margin-top: 10rem;
   color: #cfcfcf ;
   animation: title 1.2s forwards linear;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
 }
 
 .hero p {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #cfcfcf;
   opacity: 0;
   animation: subtitle 1.2s forwards linear;
   animation-delay: 1.2s;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
 }
 
 /* input placeholder color changes */
@@ -148,7 +150,7 @@ body {
   }
 
   to {
-    font-size: 6rem;
+    font-size: 5rem;
     opacity: 1;
   }
 }
