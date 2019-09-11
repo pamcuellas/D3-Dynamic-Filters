@@ -122,7 +122,8 @@ let updDropDown = ( id ) => {
 		let currKeyValue = d3.select("#" + key).node().value;
 
 		// Update all dropdowns except the last one that just has changed.
-		if ((key != id) && (currKeyValue === "")) {
+		// if ((key != id) && (currKeyValue === "")) {
+		if (key != id) {
 
 			// Grab data for current drop-down 
 			let currKeyData = filteredData.reduce(  (acc , obj) =>  { 

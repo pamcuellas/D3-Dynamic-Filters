@@ -198,10 +198,20 @@ thead {
   font-weight: bold;
 }
 
-tr td {
-  font-size: 0.8rem;
-  color:white;
+.table thead th, 
+.table tbody td {
   
+  border: 1px solid rgba(148,202,255, .7);
+  color:white;
+}
+
+.table thead th {
+  font-size: 12px;
+}
+
+
+.table tbody td { 
+  font-size: 11px;    
 }
 
 tr td:nth-of-type(1),
@@ -227,6 +237,7 @@ tr td:last-child
 
 label {
   margin-bottom: 0;
+  font-size: 0.8rem;
   color: #FFFFFF;
 }
 
@@ -234,17 +245,18 @@ label {
 /* FORMATTING drop-down */ 
 .drop-down {
   display: block;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   font-family: sans-serif;
   font-weight: 700;
-  color: #5a6773;
-  line-height: 1.1;
+  color: #384047;
+  line-height: 1;
+  border-radius: 1.5px;
   padding: .6em 1.4em .5em .8em;
   width: 100%;
   max-width: 100%; 
   box-sizing: border-box;
   margin: 0;
-  border: 0.3px solid #aaa;
+  border: 1px solid rgba(148,202,255, 0.5);
   box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -264,7 +276,7 @@ label {
 }
 .drop-down:focus {
   border-color: #aaa;
-  box-shadow: 0 0 1px 1px rgba(59, 153, 252, .7);
+  box-shadow: 0 0 1px 1px rgba(148,202,255, .7);
   box-shadow: 0 0 0 3px -moz-mac-focusring;
   color: #222; 
   outline: none;
