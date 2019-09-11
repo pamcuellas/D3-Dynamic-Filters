@@ -1,9 +1,9 @@
 /*jshint esversion: 6 */
 
 // Function to Capitalize all words in a string
-let capitalize_Words = str => {
-	return str.replace(/\w\S*/g, (word) => {
-							return word.charAt(0).toUpperCase() + word.substr(1).toLowerCase();
+let capitalize = str => {
+	return str.replace(/\w\S*/g, (wrd) => {
+							return wrd.charAt(0).toUpperCase() + wrd.substr(1).toLowerCase();
 						});
 };
 
@@ -19,8 +19,8 @@ const tableData = data.map( obj => {
 										date: formatDate(obj.datetime),
 										country: obj.country.toUpperCase(),
 										state: obj.state.toUpperCase(),
-										city: capitalize_Words(obj.city),
-										shape: capitalize_Words(obj.shape),
+										city: capitalize(obj.city),
+										shape: capitalize(obj.shape),
 										durationMinutes: obj.durationMinutes,
 										comments: obj.comments
 									};
@@ -48,9 +48,8 @@ d3.selectAll('select').on('change', () => {
 
 		// Get the value for current filter (or drop-down)
 		let  value = d3.select('#'+ key).node().value;
-
 		// Return the current filter (key and value) only if it already has a value.
-		if (value != "") acc.push( { [key]: value});
+		if (value != "") acc.push( { [key]: value } );
 		return acc;
 	}, []);
 
@@ -85,9 +84,6 @@ d3.selectAll('select').on('change', () => {
 
 let updateTable = () => { 
 
-	// Grab the tbody  
-	let tbody = d3.select("#ufo-table tbody");
-
 	// Remove the tbody  
 	d3.select("tbody").remove();	
 
@@ -97,8 +93,8 @@ let updateTable = () => {
 		// Grab the table  
 		let table = d3.select("#ufo-table");
 
-		// // Remove any previous table selection  
-		d3.select("tbody").remove();	
+		// Sort Data by state.
+		filteredData.sort( (a,b) => (a.state < b.state ? -1 : 1) );
 
 		// Create the tbody with the new data selection/filter
 		table.append("tbody")
@@ -107,7 +103,7 @@ let updateTable = () => {
 				.enter()
 				.append("tr")
 			.selectAll("td")
-				.data(  obj => d3.values(obj) )
+				.data( obj => d3.values(obj) )
 				.enter()
 				.append("td")
 				.text( d => $('<div>').html(d).text() )
@@ -122,8 +118,11 @@ let updDropDown = ( id ) => {
 	// 'key' here means the dropdown id and also the name of field/column on the objects array 
 	dataKeys.forEach( (key, index) => {
 
+		// Grab the current Key value
+		let currKeyValue = d3.select("#" + key).node().value;
+
 		// Update all dropdowns except the last one that just has changed.
-		if (key != id)  {
+		if ((key != id) && (currKeyValue === "")) {
 
 			// Grab data for current drop-down 
 			let currKeyData = filteredData.reduce(  (acc , obj) =>  { 
@@ -136,6 +135,9 @@ let updDropDown = ( id ) => {
 
 			// Sort the values
 			currKeyData.sort();
+
+			// console.log(" filteredData", filteredData);
+			// console.log(key, currKeyData);
 
 			// Select current drop-down 
 			let dropdown = d3.select("#" + key);
@@ -153,9 +155,14 @@ let updDropDown = ( id ) => {
 		}
 
 		// Return the selected value to dropdown if it already had one.
-		if (currFilters[index]){
-			d3.select("#" + key).property("value", currFilters[index][key]);
+		// if (currFilters[index]){
+		// 	d3.select("#" + key).property("value", currFilters[index][key]);
+		// }
+
+		if (currKeyValue){
+			d3.select("#" + key).property("value", currKeyValue);
 		}
+		
 
 	});
 };
