@@ -4,7 +4,7 @@ var data = [{
     state: "ar",
     country: "us",
     shape: "circle",
-    durationMinutes: "5 min",
+    durationMinutes: "5 mins.",
     comments: "4 bright green circles high in the sky going in circles then one bright green light at my front door."
   },
   {
@@ -13,7 +13,7 @@ var data = [{
     state: "ca",
     country: "us",
     shape: "light",
-    durationMinutes: "13 min",
+    durationMinutes: "13 minutes",
     comments: "Three bright red lights witnessed floating stationary over San Diego New Years Day 2010"
   },
   {
@@ -22,7 +22,7 @@ var data = [{
     state: "ca",
     country: "us",
     shape: "triangle",
-    durationMinutes: "6 min",
+    durationMinutes: "6 minutes",
     comments: "On New Years Eve I went outside to hear the celebration and fireworks in my neighbor hood. And noticed 3 red lights above my house and"
   },
   {
@@ -31,7 +31,7 @@ var data = [{
     state: "ca",
     country: "us",
     shape: "triangle",
-    durationMinutes: "12 min",
+    durationMinutes: "12 minutes",
     comments: "3 Red objects hovering over El Cajon CA"
   },
   {
@@ -49,7 +49,7 @@ var data = [{
     state: "or",
     country: "us",
     shape: "triangle",
-    durationMinutes: "a few min",
+    durationMinutes: "a few mintues",
     comments: "Triangle shaped craft with three red lights at points hovering over Grants Pass&#44 Oregon."
   },
   {
@@ -67,7 +67,7 @@ var data = [{
     state: "ca",
     country: "us",
     shape: "light",
-    durationMinutes: "about 15 min",
+    durationMinutes: "about 15 minutes",
     comments: "3 Red lights in line pattern above El Cajon/ East County."
   },
   {
@@ -76,7 +76,7 @@ var data = [{
     state: "az",
     country: "us",
     shape: "unknown",
-    durationMinutes: "3 min",
+    durationMinutes: "3 minutes",
     comments: "One huge UFO or three seperate ones"
   },
   {
@@ -85,7 +85,7 @@ var data = [{
     state: "ky",
     country: "us",
     shape: "light",
-    durationMinutes: "2-3 sec",
+    durationMinutes: "2-3 seconds",
     comments: "Lights orbiting the moon"
   },
   {
@@ -103,7 +103,7 @@ var data = [{
     state: "ca",
     country: "us",
     shape: "formation",
-    durationMinutes: "15 min",
+    durationMinutes: "15 min.",
     comments: "Three red lights over the San Diego area - IT&#39S A HOAX YET AGAIN&#33&#33"
   },
   {
@@ -130,7 +130,7 @@ var data = [{
     state: "ca",
     country: "us",
     shape: "other",
-    durationMinutes: "30 min",
+    durationMinutes: "30 minuets",
     comments: "Objects in sky over Antioch California 12:03AM January 1&#44  2010"
   },
   {
@@ -139,7 +139,7 @@ var data = [{
     state: "ca",
     country: "us",
     shape: "light",
-    durationMinutes: "10 min",
+    durationMinutes: "10min",
     comments: "3 red lights in sky new years 2010"
   },
   {
@@ -157,7 +157,7 @@ var data = [{
     state: "ca",
     country: "us",
     shape: "triangle",
-    durationMinutes: "4-6 min",
+    durationMinutes: "4-6 minutes",
     comments: "3 bright red lights hovering high in the sky in an elongated triangle pattern just after midnight 2010 in La Mesa&#44 Ca"
   },
   {
@@ -175,7 +175,7 @@ var data = [{
     state: "ca",
     country: "us",
     shape: "formation",
-    durationMinutes: "25 min",
+    durationMinutes: "25 mintutes",
     comments: "3 red lights over the mountains in Eastern San Diego"
   },
   {
@@ -184,7 +184,7 @@ var data = [{
     state: "fl",
     country: "us",
     shape: "fireball",
-    durationMinutes: "4 min",
+    durationMinutes: "4 minutes",
     comments: "Slow moving fireball northbound at hight altitude Southern Florida"
   },
   {
@@ -193,8 +193,8 @@ var data = [{
     state: "co",
     country: "us",
     shape: "disk",
-    durationMinutes: "8 min",
-    comments: "We experienced red disk over the falcon&#44 colorado sky within the first min of the new year."
+    durationMinutes: "8 mins",
+    comments: "We experienced red disk over the falcon&#44 colorado sky within the first minutes of the new year."
   },
   {
     datetime: "1/1/2010",
@@ -202,7 +202,7 @@ var data = [{
     state: "fl",
     country: "us",
     shape: "unknown",
-    durationMinutes: "2 min",
+    durationMinutes: "2 minutes",
     comments: "Orange/Yellow flickering light in the sky with no sound and abrupt changes in direction&#44 below 12&#44000 feet."
   },
   {
@@ -211,7 +211,7 @@ var data = [{
     state: "co",
     country: "us",
     shape: "chevron",
-    durationMinutes: "2 min",
+    durationMinutes: "2 mins",
     comments: "New Years Eve Anomoly In Aspen Colorado"
   },
   {
@@ -220,7 +220,7 @@ var data = [{
     state: "wi",
     country: "us",
     shape: "sphere",
-    durationMinutes: "5-7 min",
+    durationMinutes: "5-7 minutes",
     comments: "Large red/orange orb traveling southeast between Milwaukee and Chicago."
   },
   {
@@ -238,7 +238,7 @@ var data = [{
     state: "ca",
     country: "us",
     shape: "sphere",
-    durationMinutes: "20 min",
+    durationMinutes: "20 minutes",
     comments: "Orange spheres in sky New Year&#39s Eve&#44 San Diego&#44 CA"
   },
   {
@@ -256,7 +256,7 @@ var data = [{
     state: "ca",
     country: "us",
     shape: "triangle",
-    durationMinutes: "3 min",
+    durationMinutes: "3 minutes",
     comments: "It happen nEw years eve 2010"
   },
   {
@@ -265,7 +265,7 @@ var data = [{
     state: "ma",
     country: "us",
     shape: "triangle",
-    durationMinutes: "30 sec",
+    durationMinutes: "30 seconds",
     comments: "Haverhill Massachusetts triangle object sighting"
   },
   {
@@ -283,7 +283,7 @@ var data = [{
     state: "nm",
     country: "us",
     shape: "light",
-    durationMinutes: "half an h",
+    durationMinutes: "half an hour",
     comments: "My wife and I were outside in the Jacuzzi when she first saw a light.  It glowed and traveled from north to south.  It lit up again whe"
   },
   {
@@ -310,7 +310,7 @@ var data = [{
     state: "ca",
     country: "us",
     shape: "light",
-    durationMinutes: "5-6 min",
+    durationMinutes: "5-6 minutes",
     comments: "Point of light in daytime sky over Orange&#44 CA"
   },
   {
@@ -319,7 +319,7 @@ var data = [{
     state: "az",
     country: "us",
     shape: "rectangle",
-    durationMinutes: "10 sec",
+    durationMinutes: "10 seconds",
     comments: "A bright light in Phoenix hovered above houses in broad daylight&#44 then vanished"
   },
   {
@@ -337,7 +337,7 @@ var data = [{
     state: "fl",
     country: "us",
     shape: "sphere",
-    durationMinutes: "10 min",
+    durationMinutes: "10 minutes",
     comments: "I was on my way out the door of my house &#44 when i stepped into the drive way of my house i noticed a redish/orange moon it was straight"
   },
   {
@@ -355,7 +355,7 @@ var data = [{
     state: "al",
     country: "us",
     shape: "triangle",
-    durationMinutes: "2 min",
+    durationMinutes: "2 minutes",
     comments: "Triangle shaped craft with orange-yellow lights that hovered very low near Redstone Arsenal in Madison&#44 Al"
   },
   {
@@ -364,7 +364,7 @@ var data = [{
     state: "co",
     country: "us",
     shape: "cross",
-    durationMinutes: "5 min",
+    durationMinutes: "5 minutes",
     comments: "extremely bright light over tree in loveland&#44 CO"
   },
   {
@@ -373,7 +373,7 @@ var data = [{
     state: "ga",
     country: "us",
     shape: "fireball",
-    durationMinutes: "3 sec",
+    durationMinutes: "3 seconds",
     comments: "glowing red spaceship flys at car"
   },
   {
@@ -382,7 +382,7 @@ var data = [{
     state: "oh",
     country: "us",
     shape: "circle",
-    durationMinutes: "20 min",
+    durationMinutes: "20 mins",
     comments: "didnt move like a plane or helicopter&#44 too close to be a star."
   },
   {
@@ -391,8 +391,8 @@ var data = [{
     state: "ny",
     country: "us",
     shape: "flash",
-    durationMinutes: "35 min",
-    comments: "colorful flashing craft hovers for 30min &amp;  then flashes violet&#44 followed by dashing to the right &amp; disappearing"
+    durationMinutes: "35 mins",
+    comments: "colorful flashing craft hovers for 30mins &amp;  then flashes violet&#44 followed by dashing to the right &amp; disappearing"
   },
   {
     datetime: "1/4/2010",
@@ -400,7 +400,7 @@ var data = [{
     state: "va",
     country: "us",
     shape: "changing",
-    durationMinutes: "abt 1 h",
+    durationMinutes: "abt 1 hour",
     comments: "Spherical flashing lights&#44 hovering in the northwestern sky&#44 no sound.  ((NUFORC Note:  Possible sighting of celestial body??  PD))"
   },
   {
@@ -418,7 +418,7 @@ var data = [{
     state: "ca",
     country: "us",
     shape: "light",
-    durationMinutes: "3 sec",
+    durationMinutes: "3 seconds",
     comments: "Thick bright light travels across southern California then disappears?"
   },
   {
@@ -427,7 +427,7 @@ var data = [{
     state: "tx",
     country: "us",
     shape: "light",
-    durationMinutes: "2-3 min",
+    durationMinutes: "2-3 minutes",
     comments: "Very bright light&#44 flying lower than a jet; appeared to be tracking another light.  ((NUFORC Note:  Satellites??  PD))"
   },
   {
@@ -436,7 +436,7 @@ var data = [{
     state: "ca",
     country: "us",
     shape: "unknown",
-    durationMinutes: "4 h",
+    durationMinutes: "4 hours",
     comments: "Extremely high&#44 hovering object blinking various colors with red light on top seen from San Pablo.  ((NUFORC Note:  Sirius??  PD))"
   },
   {
@@ -463,7 +463,7 @@ var data = [{
     state: "in",
     country: "us",
     shape: "disk",
-    durationMinutes: "15 sec",
+    durationMinutes: "15 seconds",
     comments: "Flying Saucer hovering above ground."
   },
   {
@@ -472,7 +472,7 @@ var data = [{
     state: "ca",
     country: "us",
     shape: "oval",
-    durationMinutes: "10 sec",
+    durationMinutes: "10 seconds",
     comments: "One Oval Spining above Chula Vista"
   },
   {
@@ -482,7 +482,7 @@ var data = [{
     country: "us",
     shape: "unknown",
     durationMinutes: "15 min",
-    comments: "loud aircraft that could be heard for up to 15 min at its lowest rummble."
+    comments: "loud aircraft that could be heard for up to 15 minutes at its lowest rummble."
   },
   {
     datetime: "1/5/2010",
@@ -499,7 +499,7 @@ var data = [{
     state: "ny",
     country: "us",
     shape: "triangle",
-    durationMinutes: "45 sec",
+    durationMinutes: "45 seconds",
     comments: "Black Triangular Aircraft w/ Three White Lights Flying Low in New Paltz&#44 NY"
   },
   {
@@ -508,7 +508,7 @@ var data = [{
     state: "nc",
     country: "us",
     shape: "cigar",
-    durationMinutes: "40 sec",
+    durationMinutes: "40 seconds",
     comments: "Brilliant silver/white silent object flew into sight&#44 slowed&#44 paused then faded from sight."
   },
   {
@@ -517,7 +517,7 @@ var data = [{
     state: "sc",
     country: "us",
     shape: "light",
-    durationMinutes: "seven min",
+    durationMinutes: "seven minutes",
     comments: "Orange light that set down in woods&#44 got brighter&#44 then left"
   },
   {
@@ -526,7 +526,7 @@ var data = [{
     state: "ca",
     country: "us",
     shape: "light",
-    durationMinutes: "20 min",
+    durationMinutes: "20 minutes",
     comments: "Unusual silent&#44 orange glowing light stopping changing direction and discharging sudstance."
   },
   {
@@ -535,7 +535,7 @@ var data = [{
     state: "ca",
     country: "us",
     shape: "teardrop",
-    durationMinutes: "5 min",
+    durationMinutes: "5 minutes",
     comments: "I was at home in my condo at night.My condo faces the back of the 16 unit building."
   },
   {
@@ -544,7 +544,7 @@ var data = [{
     state: "ar",
     country: "us",
     shape: "disk",
-    durationMinutes: "1 h",
+    durationMinutes: "1 hour",
     comments: "disc shape hovering above Searcy&#44 AR"
   },
   {
@@ -571,7 +571,7 @@ var data = [{
     state: "ma",
     country: "us",
     shape: "circle",
-    durationMinutes: "50 sec",
+    durationMinutes: "50 sec.",
     comments: "UFO  Sighting 01/07/12010  My wife and I were sitting in our hot tub when we saw it.  It was almost overhead traveling from west to eas"
   },
   {
@@ -580,7 +580,7 @@ var data = [{
     state: "nh",
     country: "us",
     shape: "light",
-    durationMinutes: "2 sec",
+    durationMinutes: "2 seconds",
     comments: "Bright white flash on the southwestern horizon"
   },
   {
@@ -589,7 +589,7 @@ var data = [{
     state: "ma",
     country: "us",
     shape: "light",
-    durationMinutes: "approx. 1 sec",
+    durationMinutes: "approx. 1 sec.",
     comments: "Bright Florissant-green&#44 circular light arching downward with a trail of the same color.  ((NUFORC Note:  Possible meteor?  PD))"
   },
   {
@@ -598,7 +598,7 @@ var data = [{
     state: "ct",
     country: "us",
     shape: "triangle",
-    durationMinutes: "2-3 min",
+    durationMinutes: "2-3 minutes",
     comments: "Very large (747ish)&#44 low flying&#44 slow moving (30-50 mph)&#44 and absolutely silent triangular object w/3 lights."
   },
   {
@@ -607,7 +607,7 @@ var data = [{
     state: "tx",
     country: "us",
     shape: "chevron",
-    durationMinutes: "20 min",
+    durationMinutes: "20 minutes",
     comments: "Colorful and bright huge objects in sky."
   },
   {
@@ -616,7 +616,7 @@ var data = [{
     state: "tx",
     country: "us",
     shape: "unknown",
-    durationMinutes: "10-15 sec",
+    durationMinutes: "10-15 seconds",
     comments: "Four straight &#44horizontal lights on one 40-60&#39 structure&#44 150-200 ft in the air just above the tree line (Tomball TX)"
   },
   {
@@ -625,7 +625,7 @@ var data = [{
     state: "fl",
     country: "us",
     shape: "fireball",
-    durationMinutes: "2 -3 min",
+    durationMinutes: "2 -3 minutes",
     comments: "Red ball surrounded by fire surrounded by a blue green circle over Port Saint Lucie Florida"
   },
   {
@@ -634,7 +634,7 @@ var data = [{
     state: "co",
     country: "us",
     shape: "triangle",
-    durationMinutes: "40 sec",
+    durationMinutes: "40 seconds",
     comments: "A trangular craft with several&#44 large&#44 bright lights flew low and quick over the neighborhood"
   },
   {
@@ -643,7 +643,7 @@ var data = [{
     state: "on",
     country: "ca",
     shape: "disk",
-    durationMinutes: "10-20 min",
+    durationMinutes: "10-20 mins",
     comments: "very close encounter with what i truley cant imagine"
   },
   {
@@ -661,7 +661,7 @@ var data = [{
     state: "wi",
     country: "us",
     shape: "light",
-    durationMinutes: "1 h",
+    durationMinutes: "1 hour",
     comments: "multi-colored pulsating UFO&#44 round white object falls out of it straight down toward the ground"
   },
   {
@@ -670,7 +670,7 @@ var data = [{
     state: "nj",
     country: "us",
     shape: "light",
-    durationMinutes: "nine min",
+    durationMinutes: "nine minutes",
     comments: "Saw two lights that were not planes."
   },
   {
@@ -697,7 +697,7 @@ var data = [{
     state: "ca",
     country: "us",
     shape: "sphere",
-    durationMinutes: "6 sec",
+    durationMinutes: "6 seconds",
     comments: "Sphere like glowing objects hovering and then traveling in an incredibly fast speed then vanishing."
   },
   {
@@ -706,7 +706,7 @@ var data = [{
     state: "mi",
     country: "us",
     shape: "formation",
-    durationMinutes: "several h",
+    durationMinutes: "several hours",
     comments: "Southeast sky early in the evening&#44 Blue&#44 Green and Red Lights.  ((NUFORC Note:  Possible sighting of Sirius??  PD))"
   },
   {
@@ -715,7 +715,7 @@ var data = [{
     state: "ny",
     country: "us",
     shape: "light",
-    durationMinutes: "2 sec",
+    durationMinutes: "2 seconds",
     comments: "Fast moving light curves in sky"
   },
   {
@@ -733,7 +733,7 @@ var data = [{
     state: "ky",
     country: "us",
     shape: "unknown",
-    durationMinutes: "45 min",
+    durationMinutes: "45 minutes",
     comments: "I went outside for nightly smoke break and to gaze at the night sky.  I noticed something that seemed like an out of place star only to"
   },
   {
@@ -742,7 +742,7 @@ var data = [{
     state: "ma",
     country: "us",
     shape: "sphere",
-    durationMinutes: "5 min",
+    durationMinutes: "5 minutes",
     comments: "Unidentified object&#44 roughly spherical&#44 hovering/moving very slowly&#44 many lights&#44 multiple colors."
   },
   {
@@ -751,7 +751,7 @@ var data = [{
     state: "tx",
     country: "us",
     shape: "light",
-    durationMinutes: "2 sec",
+    durationMinutes: "2 seconds",
     comments: "3 Fast-moving lights over Round Rock Texas"
   },
   {
@@ -760,7 +760,7 @@ var data = [{
     state: "ca",
     country: "us",
     shape: "unknown",
-    durationMinutes: "5 sec",
+    durationMinutes: "5 secondes",
     comments: "A bright light hitting us while leaving at high speed"
   },
   {
@@ -778,7 +778,7 @@ var data = [{
     state: "md",
     country: "us",
     shape: "sphere",
-    durationMinutes: "2 min",
+    durationMinutes: "2 minutes",
     comments: "Photo taken of silver colored sphere in Western Maryland."
   },
   {
@@ -796,7 +796,7 @@ var data = [{
     state: "nm",
     country: "us",
     shape: "other",
-    durationMinutes: "5 min",
+    durationMinutes: "5 min.",
     comments: "green figure 8 followed by military aircraft"
   },
   {
@@ -805,7 +805,7 @@ var data = [{
     state: "la",
     country: "us",
     shape: "oval",
-    durationMinutes: "15 min",
+    durationMinutes: "15:00 mins",
     comments: "Two objects meet then leave each other one to the east and one to the west"
   },
   {
@@ -814,7 +814,7 @@ var data = [{
     state: "mo",
     country: "us",
     shape: "chevron",
-    durationMinutes: "1-2 min",
+    durationMinutes: "1-2 minutes",
     comments: "((HOAX??))  I was heading driving to the store when I seen a red and yellow lighted craft in the air flying 1000 ft or less strobing."
   },
   {
@@ -832,7 +832,7 @@ var data = [{
     state: "ks",
     country: "us",
     shape: "circle",
-    durationMinutes: "6 sec",
+    durationMinutes: "6 seconds",
     comments: "4 rings of light accompanied by a single ring of light"
   },
   {
@@ -841,7 +841,7 @@ var data = [{
     state: "ma",
     country: "us",
     shape: "unknown",
-    durationMinutes: "10 sec",
+    durationMinutes: "10 seconds",
     comments: "((HOAX??))  saw a strange object in the night sky"
   },
   {
@@ -859,7 +859,7 @@ var data = [{
     state: "fl",
     country: "us",
     shape: "fireball",
-    durationMinutes: "15 sec",
+    durationMinutes: "15 seconds",
     comments: "Bright fireball seen over Naples area of SW Florida."
   },
   {
@@ -877,7 +877,7 @@ var data = [{
     state: "mo",
     country: "us",
     shape: "triangle",
-    durationMinutes: "5 to 10 sec",
+    durationMinutes: "5 to 10 sec.",
     comments: "V shaped&#44 extreamly fast&#44 silent and the color was orange."
   },
   {
@@ -886,7 +886,7 @@ var data = [{
     state: "ky",
     country: "us",
     shape: "other",
-    durationMinutes: "5 min",
+    durationMinutes: "5 minutes",
     comments: "3 SQUARE-SHAPED OBJECTS WITH RED LIGHTS IN A TRIANGULAR FORM - KENTUCKY"
   },
   {
@@ -895,7 +895,7 @@ var data = [{
     state: "on",
     country: "ca",
     shape: "triangle",
-    durationMinutes: "5 min",
+    durationMinutes: "5 minutes",
     comments: "triangle shaped craft with four coloured lights"
   },
   {
@@ -904,7 +904,7 @@ var data = [{
     state: "wv",
     country: "us",
     shape: "sphere",
-    durationMinutes: "7 min",
+    durationMinutes: "7 minuts",
     comments: "something followed my family and left a piece behind"
   },
   {
@@ -913,7 +913,7 @@ var data = [{
     state: "or",
     country: "us",
     shape: "unknown",
-    durationMinutes: "2 min",
+    durationMinutes: "2 minutes",
     comments: "Awaken by several episodes of BRIGHT FLASHING LIGHT and a very LOUD mysterous noise."
   },
   {
@@ -922,7 +922,7 @@ var data = [{
     state: "or",
     country: "us",
     shape: "changing",
-    durationMinutes: "3 min",
+    durationMinutes: "3 minutes",
     comments: "black floating object with lights"
   },
   {
@@ -940,7 +940,7 @@ var data = [{
     state: "ks",
     country: "us",
     shape: "teardrop",
-    durationMinutes: "5 min",
+    durationMinutes: "5 minutes",
     comments: "Orange teardrop-shape craft"
   },
   {
@@ -949,7 +949,7 @@ var data = [{
     state: "nc",
     country: "us",
     shape: "other",
-    durationMinutes: "10 sec",
+    durationMinutes: "10 seconds",
     comments: "Car like object in the sky"
   },
   {
@@ -958,7 +958,7 @@ var data = [{
     state: "wi",
     country: "us",
     shape: "disk",
-    durationMinutes: "15 min",
+    durationMinutes: "15minutes",
     comments: "five glowning globes over waukesha&#44wi"
   },
   {
@@ -967,7 +967,7 @@ var data = [{
     state: "ca",
     country: "us",
     shape: "fireball",
-    durationMinutes: "30 sec",
+    durationMinutes: "30 seconds",
     comments: "Fireballs seen from Ceres&#44 California"
   },
   {
@@ -976,7 +976,7 @@ var data = [{
     state: "pa",
     country: "us",
     shape: "triangle",
-    durationMinutes: "30 sec",
+    durationMinutes: "30 seconds",
     comments: "Blinking lights on a rectanglar shaped object spotted in the sky in White Oak&#44 PA."
   },
   {
@@ -985,7 +985,7 @@ var data = [{
     state: "ms",
     country: "us",
     shape: "light",
-    durationMinutes: "2 h",
+    durationMinutes: "2 hours",
     comments: "A bright light hovering in the southwestern sky.  ((NUFORC Note:  Possible sighting of Sirius.  PD))"
   },
   {
@@ -994,7 +994,7 @@ var data = [{
     state: "fl",
     country: "us",
     shape: "unknown",
-    durationMinutes: "4 min",
+    durationMinutes: "4 minutes",
     comments: "Bright orange object&#44 rapid speed and direction changes .."
   }
 ];

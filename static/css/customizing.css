@@ -5,10 +5,15 @@
     flex-wrap: wrap;
 }
 
+/* FORMATING TABLE */ 
 thead {
     background-color: #5a6773;
     color: #FFFFFF;
     font-size: 0.9rem;
+}
+.table-head {
+    font-size: 0.8rem;
+    font-weight: bold;
 }
 
 tr td {
@@ -30,24 +35,7 @@ tr td:last-child
     text-transform: capitalize;
 }
 
-.table-head {
-    font-size: 0.8rem;
-    font-weight: bold;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* FORMATTING drop-down */ 
 .drop-down {
     display: block;
     font-size: 0.9rem;
@@ -62,7 +50,6 @@ tr td:last-child
     margin: 0;
     border: 0.3px solid #aaa;
     box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
-    /* border-radius: .5em; */
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
@@ -114,7 +101,6 @@ tr td:last-child
     .table th, 
     .table td {
         font-size: 7px;
-        /* font-weight: normal; */
     }
 
     tr td:last-child

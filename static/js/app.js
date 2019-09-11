@@ -1,12 +1,13 @@
 /*jshint esversion: 6 */
 
-
+// Function to Capitalize all words in a string
 let capitalize_Words = str => {
 	return str.replace(/\w\S*/g, (word) => {
 							return word.charAt(0).toUpperCase() + word.substr(1).toLowerCase();
 						});
 };
 
+// Function to format date to YYYY-MM-DD
 let formatDate = dateStr => {
 	let date = dateStr.split("/").map( num => (num.length === 1 ? '0'+ num : num ) );
 	return (date[2] + '-' +  date[1] + '-' + date[0]);  
@@ -26,33 +27,32 @@ const tableData = data.map( obj => {
 					return newStruct;
 				});
 
+// Global variables				
 let filteredData = tableData;
-const keysArray = ['date','country','state','city','shape'];
+const dataKeys = ['date','country','state','city','shape'];
 let currFilters = [];
 
+// Listener to reset filters
 d3.select("#reset-filter").on('click', () => {
 	d3.select("tbody").remove();
 	filteredData = tableData;
 });
 
-// Generic change event for all select elements (or combo-boxes)
+// Generic change event for all SELECT elements (drop-down)
 d3.selectAll('select').on('change', () => {
 
-	// Grab info of the changed combo-box.
-	var currIDchanged = d3.select(d3.event.target).attr("id");	
+	d3.event.preventDefault();
 
 	// Get all selected filters and store in an array of objects.
-	currFilters = keysArray.reduce( (acc, key) => {
-		// Get the value for current filter
+	currFilters = dataKeys.reduce( (acc, key) => {
+
+		// Get the value for current filter (or drop-down)
 		let  value = d3.select('#'+ key).node().value;
 
-		// Just return if it already has a value (Remark: I am using the select element name at ).
-		// if (!keysArray.includes( value )) acc.push( { [key]: value});
+		// Return the current filter (key and value) only if it already has a value.
 		if (value != "") acc.push( { [key]: value});
 		return acc;
 	}, []);
-
-	console.log("Current Filters: ", currFilters);
 
 	// Mount an updated datasource based on the current filters.
 	filteredData = tableData.filter( (dataObj) => {
@@ -71,53 +71,61 @@ d3.selectAll('select').on('change', () => {
 			return ( keyValueData === keyValueFilter );
 		});
 	
-	});	
+    });	
+	
+	// Grab the id of the drop-down that just has changed.
+	var currIDchanged = d3.select(d3.event.target).attr("id");	
 
-	console.log(filteredData);
-
-	updComboBoxes(currIDchanged);
+	updDropDown(currIDchanged);
 
 	updateTable();
 
 });
 
+
 let updateTable = () => { 
 
-	// Grab the table  
-	let table = d3.select("#ufo-table");
+	// Grab the tbody  
+	let tbody = d3.select("#ufo-table tbody");
 
-	// Remove any previous table selection  
+	// Remove the tbody  
 	d3.select("tbody").remove();	
 
-	// Create the tbody with the new data selection/filter
-	table.append("tbody")
-		.selectAll("tr")
-			.data( filteredData )
-			.enter()
-			.append("tr")
-		.selectAll("td")
-			.data(  obj => d3.values(obj) )
-			.enter()
-			.append("td")
-			.text( d => $('<div>').html(d).text() )
-			.classed('align-middle', true);
-			 
+	// update the table only if there is at least one filter selected. 
+	if (currFilters.length) { 
+
+		// Grab the table  
+		let table = d3.select("#ufo-table");
+
+		// // Remove any previous table selection  
+		d3.select("tbody").remove();	
+
+		// Create the tbody with the new data selection/filter
+		table.append("tbody")
+			.selectAll("tr")
+				.data( filteredData )
+				.enter()
+				.append("tr")
+			.selectAll("td")
+				.data(  obj => d3.values(obj) )
+				.enter()
+				.append("td")
+				.text( d => $('<div>').html(d).text() )
+				.classed('align-middle', true);
+	}
 };
 
 
+/* update drop-downs based on the current filters */ 
+let updDropDown = ( id ) => {
 
-/* update all combo-boxes based on the current filters */ 
-let updComboBoxes = ( id ) => {
+	// 'key' here means the dropdown id and also the name of field/column on the objects array 
+	dataKeys.forEach( (key, index) => {
 
-	keysArray.forEach( (key, index) => {
-
-		// Get the selected value of current combo.
-		const currOptSelected = d3.select("#" + key).node().value; 
-
-		// Update all combo-boxes but not the changed one.
+		// Update all dropdowns except the last one that just has changed.
 		if (key != id)  {
 
-			/* Grab data for current combo-box */
+			// Grab data for current drop-down 
 			let currKeyData = filteredData.reduce(  (acc , obj) =>  { 
 				acc.push(obj[key]); 
 				return acc; 
@@ -125,59 +133,33 @@ let updComboBoxes = ( id ) => {
 
 			// Remove duplicated values
 			currKeyData = [...new Set(currKeyData)];
+
 			// Sort the values
 			currKeyData.sort();
 
+			// Select current drop-down 
+			let dropdown = d3.select("#" + key);
 
-			// Select current combo-box 
-			let comboID = d3.select("#" + key);
+			// Clear current drop-down content 
+			dropdown.text("");
 
-			// Clear current combo-box content 
-			comboID.text("");
-
-			// Update data combo-box according to the current key/id 
-			comboID
-				.selectAll("option")
-				.data(currKeyData)
-				.enter()
-				.append("option")  
-					.text( d => d);
+			// // Update data drop-down according to the current key/id 
+			dropdown
+			.selectAll("option")
+			.data(currKeyData)
+			.enter()
+			.append("option")  
+				.text( d => d);		
 		}
 
-		// Return the selected value if it already has one.
-		if ( currOptSelected ) {
-			d3.select("#" + key).property("value", currOptSelected);
+		// Return the selected value to dropdown if it already had one.
+		if (currFilters[index]){
+			d3.select("#" + key).property("value", currFilters[index][key]);
 		}
+
 	});
 };
 
-// Initialize combo-boxes.
-updComboBoxes ( " " );
+// Initialize drop-down.
+updDropDown ( " " );
 
-
-$("select").on("click" , function() {
-  
-	$(this).parent(".select-box").toggleClass("open");
-	
-  });
-  
-  $(document).mouseup(function (e)
-  {
-	  var container = $(".select-box");
-  
-	  if (container.has(e.target).length === 0)
-	  {
-		  container.removeClass("open");
-	  }
-  });
-  
-  
-  $("select").on("change" , function() {
-	
-	var selection = $(this).find("option:selected").text(),
-		labelFor = $(this).attr("id"),
-		label = $("[for='" + labelFor + "']");
-	  
-	label.find(".label-desc").html(selection);
-	  
-  });
