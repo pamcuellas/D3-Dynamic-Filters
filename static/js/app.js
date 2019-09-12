@@ -88,7 +88,7 @@ window.setTimeout( () => {
 
 	});
 
-
+	/////////// Update data on table 
 	let updateTable = () => { 
 
 		// Remove the tbody  
@@ -121,8 +121,7 @@ window.setTimeout( () => {
 		showTheCompleteDataset = false;
 	};
 
-
-	/* update drop-downs based on the current filters */ 
+	/////////// update drop-downs based on the current filters 
 	let updDropDown = (  ) => {
 
 		// 'key' here means the dropdown id and also the name of field/column on the objects array 
@@ -167,6 +166,7 @@ window.setTimeout( () => {
 		});
 	};
 
+	///////////// Function to initialize data and elements
 	let init = () => {
 		// Clear filters
 		currFilters = [];
@@ -181,8 +181,7 @@ window.setTimeout( () => {
 		// Popolate dropdowns
 		updDropDown( );
 	};
-
-	// Initialize 
+	
 	init();
 
 
