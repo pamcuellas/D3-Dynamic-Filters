@@ -332,6 +332,10 @@ label {
 }
 
 @media screen and (max-width: 500px) {
+  .container-filters {
+    justify-content: space-between;
+  }
+  
   .table {
     width: 99%;
   }
