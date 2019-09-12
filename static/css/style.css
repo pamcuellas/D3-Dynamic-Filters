@@ -96,7 +96,8 @@ body {
 .hero h1 {
   margin-top: 10rem;
   color: #cfcfcf ;
-  animation: title 1.2s forwards linear;
+  animation-delay: 1s;
+  animation: title 1.5s forwards linear;
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
 }
 
@@ -104,8 +105,8 @@ body {
   font-size: 2.5rem;
   color: #cfcfcf;
   opacity: 0;
-  animation: subtitle 1.2s forwards linear;
-  animation-delay: 1.2s;
+  animation: subtitle 1.5s forwards linear;
+  animation-delay: 2s;
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
 }
 
@@ -280,9 +281,7 @@ label {
   font-weight:normal;
 }
 
-
-
-.reset-filter,
+.reset-filters,
 .show-data {
   color: #94caff;
   margin-left: 1rem;
@@ -290,8 +289,17 @@ label {
   font-size: 0.85rem;
 }
 
+.reset-filters:hover,
+.show-data:hover {
+  color: red;
+  cursor: pointer;
+}
+
 .fas {
   color: #191919;
+}
+.fas:hover {
+  color: #000;
 }
 
 /* MEDIA */ 
@@ -349,7 +357,7 @@ label {
     margin-right:1rem;
   }
 
-  .reset-filter,
+  .reset-filters,
   .show-data {
     color: #94caff;
     font-size: 0.8rem;  
