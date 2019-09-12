@@ -177,11 +177,12 @@ body {
 .container-filters {  
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
+  width: 80%;
 }
 
-/* FORMATING TABLE */ 
+/* FORMAT TABLE */ 
 thead {
   background-color: #5a6773;
   color: #FFFFFF;
@@ -280,7 +281,25 @@ label {
 }
 
 
+
+.reset-filter,
+.show-data {
+  color: #94caff;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 0.85rem;
+}
+
+.fas {
+  color: #191919;
+}
+
+/* MEDIA */ 
 @media screen and (max-width: 800px) {
+
+  .container-filters {
+    width: 100%;
+  }
   .table thead th {
     font-size: 11px;
   }
@@ -291,7 +310,6 @@ label {
   label {
     font-size: 0.75rem;
   }
-
 
   tr td:first-of-type 
   {
@@ -331,4 +349,9 @@ label {
     margin-right:1rem;
   }
 
+  .reset-filter,
+  .show-data {
+    color: #94caff;
+    font-size: 0.8rem;  
+  }
 }
