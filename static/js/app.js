@@ -176,3 +176,7 @@ let updDropDown = ( valueSelected ) => {
 // Initialize drop-down.
 updDropDown ( "" );
 
+/*  TOOL TIP  */
+$(document).ready(function(){
+	$('[data-toggle="tooltip"]').tooltip();   
+});

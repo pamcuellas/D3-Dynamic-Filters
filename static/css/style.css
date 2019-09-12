@@ -130,19 +130,6 @@ body {
   color: #8e979f;
 }
 
-/* media queries which will only be activated at specific screen sizes */
-/* @media (max-width: 800px) {
-  #table-area td {
-    font-size: 1em;
-  }
-} */
-
-@media (max-width: 500px) {
-  .hero h1 {
-    animation: smaller-title 1.2s forwards linear;
-  }
-}
-
 /* keyframe animations which will be used to animate the title */
 @keyframes title {
   from {
@@ -176,6 +163,12 @@ body {
   }
 }
 
+
+@media (max-width: 500px) {
+  .hero h1 {
+    animation: smaller-title 1.2s forwards linear;
+  }
+}
 
 
 
@@ -313,18 +306,21 @@ label {
 }
 
 @media screen and (max-width: 500px) {
+  .table {
+    width: 99%;
+  }
   .table thead th {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
+    width: unset;
   }
   .table tbody td { 
-    font-size: 0.65rem;    
+    font-size: 0.5rem;  
+    width: unset;  
   }
 
-
-  /* tr td:last-child
-  {
-      font-size: 7px;
-  } */
+  .container-fluid{
+    padding: 0;
+  }  
 
   .drow-down {
     font-weight: none;
