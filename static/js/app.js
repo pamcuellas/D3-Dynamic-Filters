@@ -72,10 +72,13 @@ d3.selectAll('select').on('change', () => {
 	
     });	
 	
-	// Grab the id of the drop-down that just has changed.
-	var currIDchanged = d3.select(d3.event.target).attr("id");	
+	// // Grab the id of the drop-down that just has changed.
+	// var valueSelected = d3.select(d3.event.target).attr("id");	
+	// 	// Grab the value changed
+	// 	let valueSelected = d3.select("#" + id).node().value;
 
-	updDropDown(currIDchanged);
+
+	updDropDown(d3.event.target.value);
 
 	updateTable();
 
@@ -113,7 +116,7 @@ let updateTable = () => {
 
 
 /* update drop-downs based on the current filters */ 
-let updDropDown = ( id ) => {
+let updDropDown = ( valueSelected ) => {
 
 	// 'key' here means the dropdown id and also the name of field/column on the objects array 
 	dataKeys.forEach( (key, index) => {
@@ -123,7 +126,10 @@ let updDropDown = ( id ) => {
 
 		// Update all dropdowns except the last one that just has changed.
 		// if ((key != id) && (currKeyValue === "")) {
-		if (key != id) {
+		// if (( valueSelected === "" )  || 
+		//    ( valueSelected != "" && currKeyValue === "")) {
+			
+		// if (key != id) {
 
 			// Grab data for current drop-down 
 			let currKeyData = filteredData.reduce(  (acc , obj) =>  { 
@@ -153,7 +159,7 @@ let updDropDown = ( id ) => {
 			.enter()
 			.append("option")  
 				.text( d => d);		
-		}
+		// }
 
 		// Return the selected value to dropdown if it already had one.
 		// if (currFilters[index]){
@@ -163,11 +169,10 @@ let updDropDown = ( id ) => {
 		if (currKeyValue){
 			d3.select("#" + key).property("value", currKeyValue);
 		}
-		
 
 	});
 };
 
 // Initialize drop-down.
-updDropDown ( " " );
+updDropDown ( "" );
 

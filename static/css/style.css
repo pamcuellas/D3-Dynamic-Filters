@@ -131,11 +131,11 @@ body {
 }
 
 /* media queries which will only be activated at specific screen sizes */
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   #table-area td {
     font-size: 1em;
   }
-}
+} */
 
 @media (max-width: 500px) {
   .hero h1 {
@@ -161,7 +161,7 @@ body {
   }
 
   to {
-    font-size: 5.5rem;
+    font-size: 3rem;
     opacity: 1;
   }
 }
@@ -186,7 +186,6 @@ body {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  
 }
 
 /* FORMATING TABLE */ 
@@ -289,11 +288,17 @@ label {
 
 
 @media screen and (max-width: 800px) {
-  .table th, 
-  .table td {
-      font-size: 11px;
-      /* font-weight: normal; */
+  .table thead th {
+    font-size: 11px;
   }
+  .table tbody td { 
+    font-size: 10px;    
+  }
+
+  label {
+    font-size: 0.75rem;
+  }
+
 
   tr td:first-of-type 
   {
@@ -308,14 +313,26 @@ label {
 }
 
 @media screen and (max-width: 500px) {
-  .table th, 
-  .table td {
-      font-size: 7px;
+  .table thead th {
+    font-size: 0.7rem;
+  }
+  .table tbody td { 
+    font-size: 0.65rem;    
   }
 
-  tr td:last-child
+
+  /* tr td:last-child
   {
       font-size: 7px;
+  } */
+
+  .drow-down {
+    font-weight: none;
+  }
+
+  .filter-field {
+    margin-left: 1rem;
+    margin-right:1rem;
   }
 
 }
