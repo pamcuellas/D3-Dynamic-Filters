@@ -7,4 +7,4 @@ window.setTimeout(function() {
     });
 
 
-}, 2000);
+}, 500);

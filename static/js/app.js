@@ -1,6 +1,7 @@
 /*jshint esversion: 6 */
 
-window.setTimeout(function() {
+// Wrap the JS code and wait 0.5 seconds until HTML be ready.
+window.setTimeout( () => {
 
 	// Global variables				
 	let filteredData;
@@ -185,4 +186,4 @@ window.setTimeout(function() {
 	init();
 
 
-}, 2000);
+}, 500);
