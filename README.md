@@ -4,3 +4,6 @@ This application deploys D3.js and DOM Manipulation to present a dataset of UFOs
 
 ### The app is available online on the URL below: 
 https://pamcuellas.github.io/D3-Dynamic-Filters
+
+### Here follows a SPA screenshot:
+<img src="https://pamcuellas.github.io/assets/images/d3-dynamic-filter-screenshot.png" width="500"/>
